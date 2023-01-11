@@ -48,15 +48,18 @@ public class Main {
         boolean work = age > 24;
         if (kindergarten) {
             System.out.println("Если возраст человека равен " + age + " ,  то ему нужно ходить в детский сад");
-        }
-        if (school) {
-            System.out.println("Если возраст человека равен " + age + " ,  то ему нужно ходить в  школу");
-        }
-        if (university) {
-            System.out.println("Если возраст человека равен " + age + " ,  то его место в университете");
-        }
-        if (work) {
-            System.out.println("Если возраст человека равен " + age + " ,  то ему нужно ходить на работу");
+        } else {
+            if (school) {
+                System.out.println("Если возраст человека равен " + age + " ,  то ему нужно ходить в  школу");
+            } else {
+                if (university) {
+                    System.out.println("Если возраст человека равен " + age + " ,  то его место в университете");
+                } else {
+                    if (work) {
+                        System.out.println("Если возраст человека равен " + age + " ,  то ему нужно ходить на работу");
+                    }
+                }
+            }
         }
 
     }
@@ -104,10 +107,10 @@ public class Main {
             System.out.println("первое число наибольшее " + one);
         } else {
             if (two >= one && two >= tree) {
-                System.out.println("второее число наибольшее "+two);
-            }else {
-                if (tree>=one && tree>=two){
-                    System.out.println("третье число наибольшее"+tree);
+                System.out.println("второее число наибольшее " + two);
+            } else {
+                if (tree >= one && tree >= two) {
+                    System.out.println("третье число наибольшее" + tree);
                 }
             }
         }
